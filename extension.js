@@ -55,14 +55,14 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-        botName: "basicBot",
+        botName: "AmiiboBot",
         language: "english",
         startupCap: 1, // 1-200
         startupVolume: 0, // 0-100
-        startupEmoji: false, // true or false
+        startupEmoji: true, // true or false
         cmdDeletion: true,
         chatLink: "https://rawgit.com/" + fork + "/basicBot/master/lang/en.json",
-        maximumAfk: 120,
+        maximumAfk: 45,
         afkRemoval: true,
         maximumDc: 60,
         bouncerPlus: true,
@@ -71,13 +71,13 @@
         lockGuard: false,
         maximumLocktime: 10,
         cycleGuard: true,
-        maximumCycletime: 10,
-        voteSkip: false,
-        voteSkipLimit: 10,
+        maximumCycletime: 60,
+        voteSkip: true,
+        voteSkipLimit: 5,
         timeGuard: true,
-        maximumSongLength: 10,
+        maximumSongLength: 6,
         autodisable: true,
-        commandCooldown: 30,
+        commandCooldown: 5,
         usercommandsEnabled: true,
         lockskipPosition: 3,
         lockskipReasons: [
@@ -91,8 +91,8 @@
         ],
         afkpositionCheck: 15,
         afkRankCheck: "ambassador",
-        motdEnabled: false,
-        motdInterval: 5,
+        motdEnabled: true,
+        motdInterval: 2,
         motd: "Temporary Message of the Day",
         filterChat: true,
         etaRestriction: false,
